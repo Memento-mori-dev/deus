@@ -22,6 +22,14 @@
   color: #202021;
 }
 
+.title-h2 {
+  font-family: "Wix Madefor Display", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 120%;
+  color: #202021;
+}
+
 .title-h3 {
   font-family: "Wix Madefor Display", sans-serif;
   font-weight: 700;
@@ -81,6 +89,68 @@
     color: #202021;
   }
 }
+.cirle-diagram__wrapper {
+  width: 230px;
+  aspect-ratio: 1;
+  box-shadow: 0 0 22px 0 rgba(159, 181, 202, 0.2);
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cirle-diagram {
+  --p: 20;
+  --c: #fff;
+  --w: 181.21px;
+  --w-s:108.19px;
+  width: var(--w);
+  aspect-ratio: 1;
+  position: relative;
+  display: inline-grid;
+  margin: 5px;
+  place-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: sans-serif;
+  background: linear-gradient(#39c7ec 0%, #39c7ec 0.01%, #0050ec 100%);
+  box-shadow: 0 0 31px 0 rgba(159, 181, 202, 0.3);
+  border-radius: 50%;
+}
+.cirle-diagram::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  inset: 0;
+  background: conic-gradient(var(--c) calc(100% - var(--p) * 1%), rgba(0, 0, 0, 0) 0);
+  transform: scale(-1, 1);
+}
+.cirle-diagram::after {
+  --padding: calc((var(--w) - var(--w-s)) / 2);
+  content: "";
+  position: absolute;
+  top: var(--padding);
+  left: var(--padding);
+  aspect-ratio: 1;
+  width: var(--w-s);
+  background-color: var(--c);
+  border-radius: 50%;
+  box-shadow: 0 0 31px 0 rgba(159, 181, 202, 0.3);
+}
+.cirle-diagram p {
+  font-family: "Wix Madefor Display", sans-serif;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 140%;
+  text-align: center;
+  background: linear-gradient(138deg, #39c7ec 0%, #39c7ec 0.01%, #0050ec 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: 1;
+}
+
 button {
   cursor: pointer;
 }
@@ -177,6 +247,7 @@ button {
   background-position: center;
 }
 .button-slider_right {
+  margin-left: 15px;
   background-image: url(assets/svg/slider-button-right.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -190,6 +261,9 @@ button {
   .button-slider {
     width: 56px;
     height: 56px;
+  }
+  .button-slider_right {
+    margin-left: 27px;
   }
 }
 .header {
@@ -603,9 +677,6 @@ button {
 .slider-main__control {
   margin-top: 38px;
 }
-.slider-main__control button:last-child {
-  margin-left: 15px;
-}
 .slider-main__img {
   margin-top: 2px;
   width: 345px;
@@ -636,17 +707,54 @@ button {
   .slider-main__control {
     margin-top: 85px;
   }
-  .slider-main__control button:last-child {
-    margin-left: 27px;
-  }
   .slider-main__img {
     position: absolute;
     right: 43.89px;
-    bottom: -7px;
+    bottom: -4px;
     width: 613.11px;
     height: 554px;
   }
 }
+.product {
+  padding-top: 60px;
+}
+.product__description span {
+  background: linear-gradient(90deg, #39c7ec 0%, #39c7ec 0.01%, #0050ec 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.product__slider {
+  margin-top: 40px;
+  padding: 40px 15px 32px 15px;
+  background-color: #EFF1F7;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.product__element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.product__text {
+  margin-top: 20px;
+  font-family: "Wix Madefor Display", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: #202021;
+  text-align: center;
+}
+.product__text span {
+  font-weight: 700;
+}
+.product__pagination {
+  margin-top: 56px;
+}
+
 .wrapper {
   padding-left: 15px;
   padding-right: 15px;

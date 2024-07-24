@@ -18,7 +18,39 @@
   font-family: "Wix Madefor Display", sans-serif;
   font-weight: 700;
   font-size: 18px;
-  line-height: 22px;
+  line-height: 120%;
+  color: #202021;
+}
+
+.body-l-bold {
+  font-family: "Wix Madefor Display", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+  color: #202021;
+}
+
+.body-l {
+  font-family: "Wix Madefor Display", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #202021;
+}
+
+.body-m {
+  font-family: "Wix Madefor Display", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: #202021;
+}
+
+.body-m-medium {
+  font-family: "Wix Madefor Display", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
   color: #202021;
 }
 
@@ -313,6 +345,97 @@ button {
     margin-top: 10px;
   }
 }
+.footer {
+  padding: 63.21px 15px 33px 15px;
+  background-color: #0056FE;
+  color: #fff;
+}
+.footer__logo {
+  width: 149.22px;
+  height: 63.25px;
+  opacity: 0.5;
+}
+.footer__title {
+  margin-top: 37.54px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+}
+.footer a, .footer p {
+  color: #fff;
+  text-decoration: none;
+}
+.footer li {
+  margin-top: 15px;
+}
+.footer li:first-child {
+  margin-top: 0;
+}
+.footer__main-menu_footer {
+  margin-top: 18px;
+}
+.footer__main-menu li {
+  list-style-type: none;
+}
+.footer__sub-box {
+  margin-top: 43px;
+  display: flex;
+}
+.footer__sub-menu ul {
+  list-style-type: none;
+}
+.footer__sub-menu li {
+  margin-top: 20px;
+}
+.footer__sub-menu li:first-child {
+  margin-top: 0;
+}
+.footer__sub-menu_left {
+  margin-left: 88px;
+}
+.footer__sub-menu_left li {
+  margin-top: 23px;
+}
+.footer__sub-menu_left li:first-child {
+  margin-top: 0;
+}
+.footer__address {
+  margin-top: 43px;
+}
+.footer__address-additional {
+  margin-top: 27px;
+}
+.footer__address-additional * {
+  margin-top: 10px;
+}
+.footer__address-additional *:first-child {
+  margin-top: 0;
+}
+.footer__tel {
+  font-style: normal;
+}
+
+.author {
+  margin-top: 140px;
+  border-top: 1px solid #fff;
+  padding-top: 49px;
+  opacity: 0.5;
+}
+.author p:last-child {
+  margin-top: 18px;
+  position: relative;
+}
+.author p:last-child::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 86px;
+  width: 48.75px;
+  height: 20px;
+  background-image: url(assets/svg/footer-logo.svg);
+  background-size: 48.75px 20px;
+}
+
 .wrapper {
   padding-left: 15px;
   padding-right: 15px;

@@ -40,11 +40,38 @@ $borderBlueGrey: #D5DDE5;
     font-family: $font-family;
     font-weight: 700;
     font-size: 18px;
-    line-height: 22px;
+    line-height: 120%;
     color: $textColorBlack;
 }
 
-
+.body-l-bold{
+    font-family: $font-family;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    color: $textColorBlack;
+}
+.body-l{
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: $textColorBlack;
+}
+.body-m{
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: $textColorBlack;
+}
+.body-m-medium{
+    font-family: $font-family;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    color: $textColorBlack;
+}
 
 @media screen and (min-width: 900px) {
 
@@ -419,6 +446,126 @@ button{
 }
 
 // header end
+
+// footer start
+
+.footer{
+    padding: 63.21px 15px 33px 15px;
+
+    background-color: $backgroundColorBlue;
+
+    &__logo{
+        width: 149.22px;
+        height: 63.25px;
+
+        opacity: .5;
+    }
+    &__title{
+        margin-top: 37.54px;
+
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 120%;
+    }
+
+    color: $textColorWhite;
+    & a,& p{
+        color: $textColorWhite;
+        text-decoration: none;
+    }
+    & li{
+        &:first-child{
+            margin-top: 0;
+        }
+        margin-top: 15px;
+    }
+    &__main-menu{
+        &_footer{
+            margin-top: 18px;
+        }
+    
+        & li{
+            list-style-type: none;
+        }
+    }
+    &__sub-box{
+        margin-top: 43px;
+
+        display: flex;
+    }
+    &__sub-menu{
+        & ul {
+            list-style-type: none;
+        }
+        & li{
+            &:first-child{
+                margin-top: 0;
+            }
+            margin-top: 20px;
+        }
+        &_left{
+            margin-left: 88px;
+            
+            & li{
+                &:first-child{
+                    margin-top: 0;
+                }
+                margin-top: 23px;
+            }
+        }
+    }
+    &__address{
+        margin-top: 43px;
+    }
+    &__address-additional{
+        margin-top: 27px;
+        & *{
+            &:first-child{
+                margin-top: 0;
+            }
+            margin-top: 10px;
+        }
+    }
+    &__tel{
+        font-style: normal;
+    }
+}
+.author{
+    margin-top: 140px;
+
+    border-top: 1px solid $backgroundColorWhite;
+
+    padding-top: 49px;
+
+    opacity: .5;
+
+    & p{
+        &:last-child{
+            margin-top: 18px;
+
+            position: relative;
+            &::before{
+                content: '';
+                position: absolute;
+                top: -5px;
+                left: 86px;
+                
+                width: 48.75px;
+                height: 20px;
+
+                background-image: url(assets/svg/footer-logo.svg);
+                background-size: 48.75px 20px;
+            }
+        }
+    }
+}
+
+@media (min-width: 900px) {
+
+}
+
+
+// footer end 
 
 
 

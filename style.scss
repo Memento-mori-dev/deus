@@ -77,10 +77,16 @@ button{
     border-radius: 10px;
 
     border: none;
+
+    transition: .3s ease;
 }
 .button-padding__blue{
     background: $backgroundColorBlue;
     color: $textColorWhite;
+
+    &:hover{
+        background: $backgroundColorBlueDark;
+    }
 }
 
 .button-header{
@@ -97,11 +103,10 @@ button{
 
     text-shadow:   0 4px 4px rgba(0, 0, 0, 0.25);
 
+    position: relative; 
     &_arrow{
         padding-right: 26px;
     
-        position: relative; 
-
         &::before{
             content: url('data:image/svg+xml; base64, <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 1L5 5L1 1" stroke="#202021" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>');
             position: absolute;
@@ -126,8 +131,37 @@ button{
 
     transition: 0.3s ease-out;
 
-    &:hover{
+    &:hover, &.active{
         color: $textColorBlue;
+
+        text-shadow:none;
+    }
+
+    &.active{
+        &::after{
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -14px;
+
+
+            width: calc(100% - 8px);
+            height: 2px;
+
+            background-color: $backgroundColorBlue;
+        }
+    }
+    &.active::after{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -14px;
+
+
+        width: calc(100% - 8px);
+        height: 2px;
+
+        background-color: $backgroundColorBlue;
     }
 }
 
@@ -334,8 +368,7 @@ button{
 }
 
 .sub-header{
-    display: block;
-
+    display: none;
     position: absolute;
     top: 100px;
 
@@ -347,12 +380,19 @@ button{
     border: 1px solid $borderBlueGrey;
 
     border-radius: 40px;
+
+    &.active{
+        display: block;    
+    }
 }
 .sub-header__element{
     margin: -10px;
 
-    display: flex;
-    align-items: center;
+    display: none;
+    &.active{
+        display: flex;
+        align-items: center;
+    }
 }
 .sub-header__article{
     margin: 10px;

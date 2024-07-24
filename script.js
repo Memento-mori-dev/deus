@@ -17,3 +17,8 @@ btnMenuPhone.addEventListener('click', (e)=>{
     button.classList.toggle('active');
     blockMenu.classList.toggle('active');
 });
+
+// let menuHeader = document.getElementsByClassName('button-header');
+// menuHeader.addEventListener('click', (e)=>{
+//     console.log(e);
+// })

@@ -10,16 +10,19 @@ $third-family: "Abel", sans-serif;
 $font3: "Inter", sans-serif;
 $font4: "Golos Text", sans-serif;
 
-$textColorBlack: #000;
+$textColorBlack: #202021;
 $textColorWhite:#fff;
 
 $backgroundColorWhite: #fff;
 $backgroundColorBlue: #0056FE;
 $backgroundColorBlueDark: #00308E;
+$backgroundColorBlueWhite: #EFF1F7;
+
+$borderBlueGrey: #D5DDE5;
 
 :root{
     font-family: $font-family;
-    color: #000;
+    color: $textColorBlack;
 }
 
 *{
@@ -41,8 +44,16 @@ $backgroundColorBlueDark: #00308E;
 }
 
 
+
 @media screen and (min-width: 900px) {
 
+.body-m-medium{
+    font-family: $font-family;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    color: $textColorBlack;
+}
 
 }
 
@@ -63,10 +74,62 @@ button{
     line-height: 100%;
 
     border-radius: 10px;
+
+    border: none;
 }
 .button-padding__blue{
     background: $backgroundColorBlue;
     color: $textColorWhite;
+}
+
+.button-header{
+    padding: 4px 0;
+
+    font-family: $font-family;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+
+    color: $textColorBlack;
+
+    text-decoration: none;
+
+    text-shadow:   0 4px 4px rgba(0, 0, 0, 0.25);
+
+    &_arrow{
+        padding-right: 26px;
+    
+        position: relative; 
+
+        &::before{
+            content: '';
+            position: absolute;
+            top: 2px;
+            right: 0;
+
+            width: 24px;
+            height: 24px;
+
+            background-image: url(assets/svg/arrow.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+
+    &.active{
+
+    }
+}
+
+
+@media (min-width: 900px) {
+    
+.button-padding{
+    padding: 20px 30px;
+
+    font-size: 16px;
+}
+
 }
 
 // components end
@@ -220,14 +283,92 @@ button{
 
     border: none;
 }
+.header__nav{
+    display: none;
+}
 
+.sub-header{
+    display: none;
+}
 
+@media (min-width: 900px) {
 
+.header{
+    max-width: 1520px;
+    margin: auto;
 
+    padding: 17px 0 17px 0;
+}
+.header__logo{
+    width: 117px;
+    height: 46px;
+}
+.header__btn-menu{
+    display: none;
+}
+.header__nav{
+    display: block;
 
+    ul{
+        display: flex;
+        align-items: center;
 
+        list-style-type: none;
+    }
+    li {
+        &:first-child{
+            margin-left: 0;
+        }
+        margin-left: 40px;
+    }
+}
 
+.sub-header{
+    display: block;
 
+    position: absolute;
+    top: 100px;
+
+    width: 100%;
+
+    padding: 40px;
+
+    background-color: $backgroundColorBlueWhite;
+    border: 1px solid $borderBlueGrey;
+
+    border-radius: 40px;
+}
+.sub-header__element{
+    margin: -10px;
+
+    display: flex;
+    align-items: center;
+}
+.sub-header__article{
+    margin: 10px;
+
+    width: 25%;
+
+    padding: 20px;
+
+    border-radius: 20px;
+
+    background: $backgroundColorWhite;
+}
+.sub-header__title{
+    font-family: $font-family;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    color: $textColorBlack;
+}
+.sub-header__text{
+    margin-top: 10px;
+}
+
+}
+
+// header end
 
 
 

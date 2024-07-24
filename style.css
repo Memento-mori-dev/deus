@@ -272,6 +272,7 @@ button {
   align-items: center;
   justify-content: space-between;
   position: relative;
+  z-index: 10;
 }
 
 .header__logo {
@@ -314,7 +315,7 @@ button {
   position: absolute;
   left: 0;
   top: 90px;
-  margin-top: 32px;
+  padding-top: 32px;
   width: 100%;
   padding: 0px 15px 0px 15px;
   background: #fff;
@@ -323,7 +324,7 @@ button {
   overflow: hidden;
 }
 .header__phone-menu.active {
-  height: 375px;
+  height: 407px;
 }
 
 .phone-menu__title {

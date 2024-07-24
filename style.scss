@@ -353,6 +353,8 @@ button{
     justify-content: space-between;
 
     position: relative;
+
+    z-index: 10;
 }
 
 .header__logo{
@@ -411,7 +413,7 @@ button{
     left: 0;
     top: 90px;
 
-    margin-top: 32px;
+    padding-top: 32px;
 
     width: 100%;
 
@@ -423,7 +425,7 @@ button{
     transition: 0.15s ease-out;
     overflow: hidden;
     &.active{
-        height: 375px;
+        height: 407px;
     }
 }
 .phone-menu__title{

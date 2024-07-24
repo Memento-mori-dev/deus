@@ -56,15 +56,48 @@ button {
 .header__btn-menu {
   border: none;
   height: 43px;
+  background: #fff;
+  transition: 0.3s ease-out;
+  position: relative;
+}
+.header__btn-menu.active img {
+  opacity: 0;
+}
+.header__btn-menu.active::before {
+  content: "";
+  position: absolute;
+  top: 21px;
+  left: 7px;
+  width: 32px;
+  height: 4px;
+  background: linear-gradient(138deg, #39c7ec 0%, #39c7ec 0.01%, #0050ec 100%);
+  transform: rotate(-45deg);
+}
+.header__btn-menu.active::after {
+  content: "";
+  position: absolute;
+  top: 21px;
+  left: 7px;
+  width: 32px;
+  height: 4px;
+  background: linear-gradient(138deg, #39c7ec 0%, #39c7ec 0.01%, #0050ec 100%);
+  transform: rotate(45deg);
 }
 
 .header__phone-menu {
   position: absolute;
   left: 0;
   top: 90px;
+  margin-top: 32px;
   width: 100%;
-  padding: 32px 15px 32px 15px;
+  padding: 0px 15px 0px 15px;
   background: #fff;
+  height: 0;
+  transition: 0.15s ease-out;
+  overflow: hidden;
+}
+.header__phone-menu.active {
+  height: 375px;
 }
 
 .phone-menu__title {

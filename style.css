@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap");
+:root {
+  font-family: "Wix Madefor Display", sans-serif;
+  color: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.title-h3 {
+  font-family: "Wix Madefor Display", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000;
+}
+
+button {
+  cursor: pointer;
+}
+
+.button-padding {
+  padding: 13px 22px;
+  font-family: "Wix Madefor Display", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  border-radius: 10px;
+}
+
+.button-padding__blue {
+  background: #0056FE;
+  color: #fff;
+}
+
+.header {
+  padding: 22px 11px 25px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.header__logo {
+  width: 100px;
+  height: 40px;
+}
+
+.header__btn-menu {
+  border: none;
+  height: 43px;
+}
+
+.header__phone-menu {
+  position: absolute;
+  left: 0;
+  top: 90px;
+  width: 100%;
+  padding: 32px 15px 32px 15px;
+  background: #fff;
+}
+
+.phone-menu__title {
+  font-family: "Wix Madefor Display", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  background: linear-gradient(138deg, #39c7ec 0%, #39c7ec 0.01%, #0050ec 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.phone-menu__main {
+  margin-top: 20px;
+}
+
+.phone-menu__nav ul {
+  list-style-type: none;
+}
+.phone-menu__nav li {
+  margin-top: 15px;
+}
+.phone-menu__nav li:first-child {
+  margin-top: 0;
+}
+.phone-menu__nav li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.phone-menu__sub-menu {
+  margin-top: 40px;
+  display: flex;
+}
+
+.sub-menu__element {
+  font-family: "Wix Madefor Display", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  color: #000;
+}
+.sub-menu__element ul {
+  list-style-type: none;
+}
+.sub-menu__element li {
+  margin-top: 20px;
+}
+.sub-menu__element li:first-child {
+  margin-top: 0;
+}
+.sub-menu__element li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.sub-menu__element_left {
+  margin-left: 89px;
+}
+
+.phone-menu__btn {
+  margin-top: 40px;
+  border: none;
+}
+
+.wrapper {
+  padding-left: 15px;
+  padding-right: 15px;
+}/*# sourceMappingURL=style.css.map */

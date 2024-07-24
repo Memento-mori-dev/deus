@@ -59,15 +59,16 @@ button {
   color: #202021;
   text-decoration: none;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  transition: 0.3s ease-out;
 }
 .button-header_arrow {
   padding-right: 26px;
   position: relative;
 }
 .button-header_arrow::before {
-  content: "";
+  content: url('data:image/svg+xml; base64, <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 1L5 5L1 1" stroke="#202021" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>');
   position: absolute;
-  top: 2px;
+  top: 4px;
   right: 0;
   width: 24px;
   height: 24px;
@@ -75,6 +76,16 @@ button {
   background-repeat: no-repeat;
   background-position: center;
 }
+.button-header_arrow:hover::before {
+  background-image: url(assets/svg/arrow-blue.svg);
+}
+.button-header_arrow.active::before {
+  background-image: url(assets/svg/arrow-blue-active.svg);
+}
+.button-header:hover {
+  color: #0056FE;
+}
+
 @media (min-width: 900px) {
   .button-padding {
     padding: 20px 30px;

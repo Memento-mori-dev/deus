@@ -55,6 +55,11 @@
 }
 
 @media screen and (min-width: 900px) {
+  .title-h3 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 120%;
+  }
   .body-m-medium {
     font-family: "Wix Madefor Display", sans-serif;
     font-weight: 500;
@@ -436,6 +441,84 @@ button {
   background-size: 48.75px 20px;
 }
 
+@media (min-width: 900px) {
+  .footer {
+    padding: 110px 0 41px 0;
+  }
+  .footer__wrapper {
+    margin: auto;
+    max-width: 1520px;
+  }
+  .footer__logo {
+    margin-top: -10px;
+  }
+  .footer__main-box {
+    margin-left: 112px;
+  }
+  .footer__title, .footer__sub-box, .footer__address, .footer__main-menu_footer {
+    margin-top: 0;
+  }
+  .footer__top {
+    display: flex;
+  }
+  .footer__title {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 100%;
+  }
+  .footer__main-menu li, .footer__main-menu li:first-child {
+    margin-top: 25px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+  }
+  .footer__sub-box {
+    margin-left: 137px;
+  }
+  .footer__sub-menu .body-l-bold {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 100%;
+  }
+  .footer__sub-menu li {
+    margin-top: 30px;
+  }
+  .footer__sub-menu_left {
+    margin-left: 103px;
+  }
+  .footer__address {
+    margin-left: 99px;
+  }
+  .footer__tel .title-h3 {
+    line-height: 100%;
+  }
+  .footer__address-additional {
+    margin-top: 40px;
+  }
+  .footer__address-additional.body-l {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+  }
+  .author {
+    margin-top: 235px;
+    padding-top: 33px;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  .author.body-m-medium {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+  }
+  .author p:last-child {
+    position: absolute;
+    right: 0;
+    margin-top: 0;
+    padding-right: 55.75px;
+  }
+}
 .wrapper {
   padding-left: 15px;
   padding-right: 15px;

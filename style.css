@@ -285,6 +285,40 @@ button {
   background-image: url(assets/svg/pagination-open.svg);
 }
 
+.pagination-word {
+  display: flex;
+}
+.pagination-word__element {
+  margin-left: 20px;
+  padding-bottom: 10px;
+  font-family: "Wix Madefor Display", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 140%;
+  color: #202021;
+  background: none;
+  border: none;
+  flex-shrink: 0;
+  opacity: 0.4;
+  position: relative;
+}
+.pagination-word__element:first-child {
+  margin-left: 0;
+}
+.pagination-word__element.active {
+  opacity: 1;
+  color: #0056FE;
+}
+.pagination-word__element.active::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #0056FE;
+}
+
 @media (min-width: 900px) {
   .button-padding {
     padding: 20px 30px;
@@ -308,6 +342,12 @@ button {
     font-weight: 700;
     font-size: 48px;
     line-height: 140%;
+  }
+  .pagination-word__element {
+    margin-left: 30px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
   }
 }
 .header {
@@ -703,6 +743,7 @@ button {
   .wrapper-grey {
     margin-top: 150px;
     padding-top: 120px;
+    padding-bottom: 150px;
   }
 }
 .slider-main {
@@ -1271,5 +1312,120 @@ button {
     font-weight: 700;
     font-size: 16px;
     line-height: 100%;
+  }
+}
+.we {
+  margin-top: 60px;
+}
+.we__title {
+  font-family: "Wix Madefor Display", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 120%;
+  color: #202021;
+}
+.we__title span {
+  background: linear-gradient(138deg, #39c7ec 0%, #39c7ec 0.01%, #0050ec 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.we__controller {
+  margin-top: 40px;
+}
+.we__content {
+  margin-top: 20px;
+  display: flex;
+}
+.we__content-option {
+  display: flex;
+}
+.we__content-item {
+  margin-left: 10px;
+  flex-shrink: 0;
+  padding: 30px 30px 9px 30px;
+  border-radius: 40px;
+  background-color: #EFF1F7;
+}
+.we__content-item:first-child {
+  margin-left: 0;
+}
+.we__content-item-description {
+  max-width: 230px;
+}
+.we__content-title {
+  font-family: "Wix Madefor Display", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+  color: #202021;
+}
+.we__content-text {
+  margin-top: 15px;
+  height: 120px;
+  font-family: "Wix Madefor Display", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: #202021;
+}
+.we__content-wrapper-img {
+  margin-top: 9px;
+  margin-left: auto;
+  width: 64px;
+  height: 64px;
+  box-shadow: 3px 3px 17px 0 rgba(210, 218, 227, 0.8), 2px 2px 3px 0 rgba(210, 218, 227, 0.3), -7px -7px 14px 0 #fff, -1px -1px 4px 0 rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  background-color: #EFF1F7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.we__content-img {
+  width: 46px;
+  height: 46px;
+}
+
+@media (min-width: 900px) {
+  .we {
+    margin-top: 150px;
+  }
+  .we__title {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 120%;
+  }
+  .we__controller {
+    margin-top: 60px;
+  }
+  .we__content {
+    margin-top: 40px;
+  }
+  .we__content-option {
+    margin: -10.5px;
+    flex-wrap: wrap;
+  }
+  .we__content-item {
+    margin: 10.5px;
+    padding: 40px;
+    width: calc(33.3% - 21px);
+  }
+  .we__content-item:first-child {
+    margin-left: 10.5px;
+  }
+  .we__content-title {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 120%;
+  }
+  .we__content-text {
+    margin-top: 20px;
+    height: 145px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+  }
+  .we__content-item-description {
+    max-width: 413px;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -1428,4 +1428,65 @@ button {
   .we__content-item-description {
     max-width: 413px;
   }
+}
+.customers__title {
+  font-family: "Wix Madefor Display", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 120%;
+  color: #202021;
+  text-align: center;
+}
+.customers__title span {
+  background: linear-gradient(138deg, #39c7ec 0%, #39c7ec 0.01%, #0050ec 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.customers__content {
+  margin-top: 40px;
+}
+.customers__option {
+  margin: -7.5px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.customers__item {
+  margin: 7.5px;
+  width: calc(50% - 15px);
+  height: 74px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.customers__controller {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 900px) {
+  .customers {
+    margin-top: 30px;
+  }
+  .customers__title {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 120%;
+    text-align: start;
+  }
+  .customers__content {
+    margin-top: 59px;
+  }
+  .customers__option {
+    margin: -10px;
+  }
+  .customers__item {
+    margin: 10px;
+    width: calc(25% - 20px);
+    height: 166px;
+  }
+  .customers__controller {
+    margin-top: 60px;
+  }
 }/*# sourceMappingURL=style.css.map */

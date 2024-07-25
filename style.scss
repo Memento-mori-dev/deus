@@ -1624,7 +1624,6 @@ button{
 // tasks end
 
 // we start
-
 .we{
     margin-top: 60px;
 
@@ -1710,7 +1709,6 @@ button{
         height: 46px;
     }
 }
-
 @media (min-width: 900px){
     .we{
         margin-top: 150px;
@@ -1761,6 +1759,81 @@ button{
 }
 // we end
 
+// customers start
+.customers{
+    &__title{
+        font-family: $font-family;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 120%;
+        color: $textColorBlack;
+        text-align: center;
+
+        & span{
+            background: linear-gradient(138deg, #39c7ec 0%, #39c7ec 0.01%, #0050ec 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    &__content{
+        margin-top: 40px;
+    }
+    &__option{
+        margin: -7.5px;
+
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    &__item{
+        margin: 7.5px;
+
+        width: calc(50% - 15px);
+        height: 74px;
+
+        object-fit: contain;
+    }
+
+    &__controller{
+        margin-top: 30px;
+
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (min-width: 900px){
+    .customers{
+        margin-top: 30px;
+    }
+    .customers__title{
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 120%;
+        text-align: start;
+    }
+    .customers__content{
+        margin-top: 59px;
+    }
+    .customers__wrapper-content{
+        
+    }
+    .customers__option{
+        margin: -10px;
+    }
+    .customers__item{
+        margin: 10px;
+
+        width: calc(25% - 20px);
+        height: 166px;
+    }
+    .customers __controller{
+        margin-top: 60px;
+    }
+}
+// customers end
 
 
 

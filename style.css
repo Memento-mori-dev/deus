@@ -179,6 +179,14 @@ button {
   background: #00308E;
 }
 
+.button-padding__white {
+  background: #fff;
+  color: #202021;
+}
+.button-padding__white:hover {
+  background: #C3CBD0;
+}
+
 .button-header {
   padding: 4px 0;
   font-family: "Wix Madefor Display", sans-serif;
@@ -889,6 +897,59 @@ button {
   }
   .card__item:first-child {
     margin-left: 0;
+  }
+}
+.banner {
+  margin-top: 60px;
+  padding: 60.5px 15px 75.5px 15px;
+  background: linear-gradient(138deg, #39c7ec 0%, #39c7ec 0.01%, #0050ec 100%);
+  border-radius: 40px;
+}
+.banner__title {
+  font-family: "Wix Madefor Display", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 120%;
+  color: #fff;
+}
+.banner__sub-title {
+  margin-top: 20px;
+  font-family: "Wix Madefor Display", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: #fff;
+}
+.banner__button {
+  margin-top: 20px;
+}
+
+@media (min-width: 900px) {
+  .banner {
+    margin-top: 150px;
+    padding: 60px 80px 61px 73px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .banner__discription {
+    width: 68%;
+  }
+  .banner__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 120%;
+  }
+  .banner__sub-title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .banner__button {
+    margin-top: 0;
+  }
+  .banner__button .button-padding__white {
+    width: 272px;
   }
 }
 .wrapper {

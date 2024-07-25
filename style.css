@@ -683,8 +683,12 @@ button {
 }
 .wrapper-grey {
   margin-top: 60px;
-  padding: 60px 0;
+  padding: 60px 0 59px 0;
   background-color: #EFF1F7;
+}
+
+.main {
+  overflow: hidden;
 }
 
 @media (min-width: 900px) {
@@ -1197,5 +1201,75 @@ button {
   }
   .launch__button {
     margin-top: 90px;
+  }
+}
+.tasks {
+  margin-top: 60px;
+}
+.tasks__title {
+  font-family: "Wix Madefor Display", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 120%;
+  background: linear-gradient(90deg, #0056fe 0%, #19bfea 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.tasks__content {
+  margin: 32.5px -7.5px -7.5px -7.5px;
+  width: 999px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.tasks__item {
+  margin: 7.5px;
+  padding: 13px 22px;
+  box-shadow: 7px 7px 30px 0 rgba(210, 218, 227, 0.6), 5px 5px 13px 0 rgba(210, 218, 227, 0.3), -5px -5px 10px 0 #fff, -10px -10px 34px 0 rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  font-family: "Wix Madefor Display", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  color: #202021;
+}
+.tasks__controller {
+  margin-top: 39px;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 900px) {
+  .tasks {
+    margin-top: 100px;
+    padding: 80px;
+    box-shadow: 15px 10px 30px 0 rgba(210, 218, 227, 0.7), 5px 5px 13px 0 rgba(210, 218, 227, 0.3), -5px -5px 10px 0 #fff, -20px -20px 34px 0 rgba(255, 255, 255, 0.8);
+    background-color: #EFF1F7;
+    border-radius: 20px;
+  }
+  .tasks__controller {
+    display: none;
+  }
+  .tasks__title {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 120%;
+  }
+  .tasks__title span {
+    background: linear-gradient(90deg, #202021 0%, #202021 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .tasks__content {
+    margin: 45px -15px -15px -15px;
+    width: auto;
+  }
+  .tasks__item {
+    margin: 15px;
+    padding: 20px 30px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
   }
 }/*# sourceMappingURL=style.css.map */

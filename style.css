@@ -1811,6 +1811,10 @@ button {
 .articles-list__item a {
   text-decoration: none;
   color: #202021;
+  transition: 0.3s ease;
+}
+.articles-list__item a:hover {
+  color: #0056FE;
 }
 
 .slider-perspective {

@@ -2206,6 +2206,11 @@ button{
         & a{
             text-decoration: none;
             color: $textColorBlack;
+
+            transition: 0.3s ease;
+            &:hover{
+                color: $textColorBlue;
+            }
         }
     }
 }

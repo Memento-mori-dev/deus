@@ -1019,6 +1019,9 @@ button {
   }
 }
 @media (min-width: 900px) and (max-width: 1560px) {
+  .card {
+    flex-wrap: wrap;
+  }
   .card__item {
     width: calc(50% - 20px);
   }

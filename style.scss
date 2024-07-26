@@ -1868,6 +1868,11 @@ button{
         max-width: 413px;
     }
 }
+@media (min-width: 900px) and (max-width: 1150px) {
+    .we__content-item{
+        width: calc(50% - 21px);
+    }
+}
 // we end
 
 // customers start

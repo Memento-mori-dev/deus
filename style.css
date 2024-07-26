@@ -1076,6 +1076,17 @@ button {
     width: 272px;
   }
 }
+@media (min-width: 900px) and (max-width: 1920px) {
+  .banner__button {
+    margin-left: 20px;
+  }
+}
+@media (min-width: 600px) and (max-width: 899px) {
+  .banner__button {
+    display: flex;
+    justify-content: end;
+  }
+}
 .ready-product {
   margin-top: 60px;
   padding: 40px 14px 63px 14px;

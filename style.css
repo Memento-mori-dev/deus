@@ -427,7 +427,7 @@ button {
   overflow: hidden;
 }
 .header__phone-menu.active {
-  height: 407px;
+  height: 529px;
 }
 
 .phone-menu__title {
@@ -502,11 +502,11 @@ button {
   display: none;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1220px) {
   .header {
-    max-width: 1520px;
+    max-width: 1560px;
     margin: auto;
-    padding: 17px 0 17px 0;
+    padding: 17px 20px 17px 20px;
   }
   .header__logo {
     width: 117px;
@@ -533,7 +533,7 @@ button {
     display: none;
     position: absolute;
     top: 100px;
-    width: 100%;
+    width: calc(100% - 40px);
     padding: 40px;
     background-color: #EFF1F7;
     border: 1px solid #D5DDE5;
@@ -665,7 +665,9 @@ button {
   }
   .footer__wrapper {
     margin: auto;
-    max-width: 1520px;
+    max-width: 1560px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .footer__logo {
     margin-top: -10px;
@@ -756,8 +758,10 @@ button {
   }
   .wrapper {
     margin: auto;
-    max-width: 1520px;
+    max-width: 1560px;
     padding: 0;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .wrapper-grey {
     margin-top: 150px;

@@ -1178,6 +1178,23 @@ button{
         display: block;
     }
 }
+@media (min-width: 900px) and (max-width: 1460px) {
+    .product__slider{
+        margin-left: 20px;
+    }
+    .cirle-diagram__wrapper{
+        flex-shrink: 0;
+    }
+}
+@media (min-width: 900px) and (max-width: 1250px) {
+    .product{
+        flex-direction: column;
+    }
+    .product__slider{
+        margin-top: 20px;
+        margin-left: 0;
+    }
+}
 // product end
 
 

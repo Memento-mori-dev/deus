@@ -1200,8 +1200,6 @@ button{
 
 // card start
 .card{
-    display: none;
-
     margin-top: 60px;
 
     &__item{
@@ -1250,18 +1248,23 @@ button{
 }
 @media (min-width: 900px){
     .card{
-        margin-top: 150px;
+        margin: 140px -10px -10px -10px;
     
         display: flex;
     }
     .card__item{
-        margin-top: 0;
-        margin-left: 20px;
+        margin: 10px;
+        
         &:first-child{
-            margin-left: 0;
+            margin-top: 10px;
         }
     }
 
+}
+@media (min-width: 900px) and (max-width: 1560px) {
+    .card__item{
+        width: calc(50% - 20px);
+    }
 }
 // card end
 

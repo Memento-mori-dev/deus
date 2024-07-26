@@ -659,7 +659,7 @@ button {
   background-size: 48.75px 20px;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 711px) {
   .footer {
     padding: 110px 0 41px 0;
   }
@@ -737,6 +737,42 @@ button {
     right: 0;
     margin-top: 0;
     padding-right: 55.75px;
+  }
+}
+@media (min-width: 711px) and (max-width: 1377px) {
+  .footer__top {
+    justify-content: space-between;
+  }
+  .footer__main-box, .footer__sub-box, .footer__address {
+    margin-left: 0;
+  }
+}
+@media (min-width: 711px) and (max-width: 1207px) {
+  .footer__sub-menu_left, .footer__main-box, .footer__sub-box, .footer__address {
+    margin-left: 20px;
+  }
+}
+@media (min-width: 711px) and (max-width: 1001px) {
+  .author {
+    margin-top: 85px;
+  }
+  .footer__top {
+    flex-wrap: wrap;
+  }
+  .footer__address {
+    margin-top: 30px;
+    margin-left: auto;
+  }
+}
+@media (min-width: 711px) and (max-width: 803px) {
+  .footer__top {
+    justify-content: start;
+  }
+  .footer__sub-box {
+    margin-top: 30px;
+  }
+  .footer__main-box {
+    margin-left: 50px;
   }
 }
 .wrapper {

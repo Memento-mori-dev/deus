@@ -2301,6 +2301,19 @@ button{
         }
     }
 }
+@media (min-width: 900px) and (max-width: 1295px) {
+    .other__content{
+        flex-direction: column;
+    }
+    .other__item{
+        margin-top: 30px;
+        &:first-child{
+            margin-top: 0;
+        }
+
+        width: 100%;
+    }
+}
 // other end
 
 

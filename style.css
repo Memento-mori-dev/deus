@@ -840,6 +840,30 @@ button {
     height: 554px;
   }
 }
+@media (min-width: 900px) and (max-width: 1485px) {
+  .slider-main__description {
+    max-width: 50%;
+  }
+  .slider-main__description p:first-child {
+    text-align: start;
+  }
+  .slider-main__description p:nth-child(2) {
+    width: auto;
+  }
+  .slider-main__img {
+    bottom: -10%;
+    width: 43%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
+@media (min-width: 900px) and (max-width: 1292px) {
+  .slider-main__img {
+    right: -2%;
+    bottom: -15%;
+    width: 50%;
+  }
+}
 .product {
   padding-top: 60px;
 }

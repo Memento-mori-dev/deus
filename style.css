@@ -1168,7 +1168,7 @@ button {
   color: #202021;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1300px) {
   .ready-product {
     margin-top: 140px;
     padding: 80px 78px 80px 80px;
@@ -1227,6 +1227,23 @@ button {
     font-weight: 400;
     font-size: 18px;
     line-height: 140%;
+  }
+}
+@media (min-width: 1300px) and (max-width: 1520px) {
+  .ready-product {
+    display: flex;
+    justify-content: space-between;
+  }
+  .ready-product__content {
+    margin-left: 20px;
+    width: 70%;
+  }
+}
+@media (max-width: 1300px) {
+  .ready-product__item {
+    max-width: 530px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .launch__title {
